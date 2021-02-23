@@ -2,7 +2,7 @@
 
 #### 介绍
 
-YiShaAdminMKII 基于一沙后台和queer，在此表示感谢 :）
+YiShaAdminMKII 基于[一沙后台](https://github.com/liukuo362573/YiShaAdmin)和[queer](https://gitee.com/songzhidan/queer)，在此表示感谢 :）
 1. 基于.net5 和 furion 的后台管理系统，主要用于自己的学习
 2. 项目尚未完善，仅用于自己的学习，不喜互喷
 3. 已完成功能：权限验证、用户管理、角色管理、菜单管理、日志记录、缓存管理
