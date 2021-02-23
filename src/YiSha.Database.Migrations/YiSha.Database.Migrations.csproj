@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>net5.0</TargetFramework>
+        <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\YiSha.Data\YiSha.Data.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="Migrations" />
+    </ItemGroup>
+
+</Project>

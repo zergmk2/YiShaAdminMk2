@@ -1,0 +1,32 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <UserSecretsId>e2e75408-3368-4437-ab51-83799b378a1e</UserSecretsId>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile></DocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Remove="wwwroot\page\system\codeTemplet\codeTempletForm.html" />
+    <Content Remove="wwwroot\page\system\codeTemplet\codeTempletIndex.html" />
+  </ItemGroup>
+
+  <ItemGroup>
+<!--    <ProjectReference Include="..\YiSha.Database.Migrations\YiSha.Database.Migrations.csproj" />-->
+    <ProjectReference Include="..\YiSha.Database.Migrations\YiSha.Database.Migrations.csproj" />
+    <ProjectReference Include="..\YiSha.WebApi\YiSha.WebApi.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="5.0.2">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ProjectExtensions><VisualStudio><UserProperties appsettings_1json__JsonSchema="" /></VisualStudio></ProjectExtensions>
+
+</Project>

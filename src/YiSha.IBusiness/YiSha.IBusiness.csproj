@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+     <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\YiSha.Entity\YiSha.Entity.csproj" />
+    <ProjectReference Include="..\YiSha.Model\YiSha.Model.csproj" />
+  </ItemGroup>
+
+</Project>

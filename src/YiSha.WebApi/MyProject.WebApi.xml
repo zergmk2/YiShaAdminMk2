@@ -1,0 +1,558 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>YiSha.WebApi</name>
+    </assembly>
+    <members>
+        <member name="T:YiSha.WebApi.Areas.HomeManage.HomeController">
+            <summary>
+                通用控制器
+            </summary>
+        </member>
+        <member name="M:YiSha.WebApi.Areas.HomeManage.HomeController.GetBackgroundImage(System.Boolean)">
+            <summary>
+                获取背景图片
+            </summary>
+            <param name="isPC">pc或app</param>
+            <returns></returns>
+        </member>
+        <member name="M:YiSha.WebApi.Areas.HomeManage.HomeController.GetCaptchaImage">
+            <summary>
+                图形验证码
+            </summary>
+        </member>
+        <member name="M:YiSha.WebApi.Areas.HomeManage.HomeController.GetPageListAndUserInfo">
+            <summary>
+                获取导航菜单信息和用户信息
+            </summary>
+        </member>
+        <member name="M:YiSha.WebApi.Areas.HomeManage.HomeController.GetUserAuthorizeJson">
+            <summary>
+                获取用户权限信息
+            </summary>
+        </member>
+        <member name="T:YiSha.WebApi.Areas.HomeManage.LoginController">
+            <summary>
+                登陆登出控制器
+            </summary>
+        </member>
+        <member name="M:YiSha.WebApi.Areas.HomeManage.LoginController.Login(System.String,System.String)">
+            <summary>
+                用户登陆
+            </summary>
+        </member>
+        <member name="T:YiSha.WebApi.Areas.OrganizationManage.DepartmentController">
+            <summary>
+                创 建：song
+                日 期：2020-12-06 14:12
+                描 述：部门信息控制器类
+            </summary>
+        </member>
+        <member name="M:YiSha.WebApi.Areas.OrganizationManage.DepartmentController.GetListJson(YiSha.Model.Param.OrganizationManage.DepartmentListParam)">
+            <summary>
+                条件查询
+            </summary>
+        </member>
+        <member name="M:YiSha.WebApi.Areas.OrganizationManage.DepartmentController.GetPageListJson(YiSha.Model.Param.OrganizationManage.DepartmentListParam,YiSha.Util.Model.Pagination)">
+            <summary>
+                条件查询-分页
+            </summary>
+        </member>
+        <member name="M:YiSha.WebApi.Areas.OrganizationManage.DepartmentController.GetFormJson(System.Int64)">
+            <summary>
+                根据ID查询
+            </summary>
+        </member>
+        <member name="M:YiSha.WebApi.Areas.OrganizationManage.DepartmentController.GetUserListJson">
+            <summary>
+                用户下拉框用
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:YiSha.WebApi.Areas.OrganizationManage.DepartmentController.SaveFormJson(YiSha.Entity.DepartmentEntity)">
+            <summary>
+                新增/修改 数据
+            </summary>
+        </member>
+        <member name="M:YiSha.WebApi.Areas.OrganizationManage.DepartmentController.DeleteFormJson(System.String)">
+            <summary>
+                删除数据
+            </summary>
+        </member>
+        <member name="T:YiSha.WebApi.Areas.OrganizationManage.PositionController">
+            <summary>
+                创 建：song
+                日 期：2020-12-06 14:10
+                描 述：职位信息控制器类
+            </summary>
+        </member>
+        <member name="M:YiSha.WebApi.Areas.OrganizationManage.PositionController.GetListJson(YiSha.Model.Param.OrganizationManage.PositionListParam)">
+            <summary>
+                条件查询
+            </summary>
+        </member>
+        <member name="M:YiSha.WebApi.Areas.OrganizationManage.PositionController.GetPageListJson(YiSha.Model.Param.OrganizationManage.PositionListParam,YiSha.Util.Model.Pagination)">
+            <summary>
+                条件查询-分页
+            </summary>
+        </member>
+        <member name="M:YiSha.WebApi.Areas.OrganizationManage.PositionController.GetFormJson(System.Int64)">
+            <summary>
+                根据ID查询
+            </summary>
+        </member>
+        <member name="M:YiSha.WebApi.Areas.OrganizationManage.PositionController.SaveFormJson(YiSha.Entity.PositionEntity)">
+            <summary>
+                新增/修改 数据
+            </summary>
+        </member>
+        <member name="M:YiSha.WebApi.Areas.OrganizationManage.PositionController.DeleteFormJson(System.String)">
+            <summary>
+                删除数据
+            </summary>
+        </member>
+        <member name="T:YiSha.WebApi.Areas.OrganizationManage.UserController">
+            <summary>
+                创 建：song
+                日 期：2020-12-04 12:41
+                描 述：用户信息控制器类
+            </summary>
+        </member>
+        <member name="M:YiSha.WebApi.Areas.OrganizationManage.UserController.GetListJson(YiSha.Model.Param.OrganizationManage.UserListParam)">
+            <summary>
+                条件查询
+            </summary>
+        </member>
+        <member name="M:YiSha.WebApi.Areas.OrganizationManage.UserController.GetPageListJson(YiSha.Model.Param.OrganizationManage.UserListParam,YiSha.Util.Model.Pagination)">
+            <summary>
+                条件查询-分页
+            </summary>
+        </member>
+        <member name="M:YiSha.WebApi.Areas.OrganizationManage.UserController.GetFormJson(System.Int64)">
+            <summary>
+                根据ID查询
+            </summary>
+        </member>
+        <member name="M:YiSha.WebApi.Areas.OrganizationManage.UserController.UserPageLoad">
+            <summary>
+                页面信息初始化
+            </summary>
+        </member>
+        <member name="M:YiSha.WebApi.Areas.OrganizationManage.UserController.GetUserDlcInfo(System.Int64)">
+            <summary>
+                获取用户关联信息
+            </summary>
+            <param name="userId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:YiSha.WebApi.Areas.OrganizationManage.UserController.SaveFormJson(YiSha.Entity.UserEntity)">
+            <summary>
+                新增/修改 数据
+            </summary>
+        </member>
+        <member name="M:YiSha.WebApi.Areas.OrganizationManage.UserController.DeleteFormJson(System.String)">
+            <summary>
+                删除数据
+            </summary>
+        </member>
+        <member name="M:YiSha.WebApi.Areas.SystemManage.CacheController.GetPageListJson(YiSha.Model.Param.SystemManage.CacheListParam,YiSha.Util.Model.Pagination)">
+            <summary>
+                条件查询-分页
+            </summary>
+        </member>
+        <member name="M:YiSha.WebApi.Areas.SystemManage.CacheController.GetDetail(YiSha.Model.Param.SystemManage.CacheListParam)">
+            <summary>
+                获取指定键的值
+            </summary>
+        </member>
+        <member name="M:YiSha.WebApi.Areas.SystemManage.CacheController.DeleteFormJson(System.Collections.Generic.List{System.String})">
+            <summary>
+                删除数据
+            </summary>
+        </member>
+        <member name="M:YiSha.WebApi.Areas.SystemManage.CacheController.SaveFormJson(System.String,System.String,System.Nullable{System.DateTime})">
+            <summary>
+                新增/修改数据
+            </summary>
+        </member>
+        <member name="T:YiSha.WebApi.Areas.SystemManage.CodeTempletController">
+            <summary>
+                创 建：song
+                日 期：2020-12-04 12:28
+                描 述：代码模板控制器类
+            </summary>
+        </member>
+        <member name="M:YiSha.WebApi.Areas.SystemManage.CodeTempletController.GetListJson(YiSha.Model.Param.SystemManage.CodeTempletListParam)">
+            <summary>
+                条件查询
+            </summary>
+        </member>
+        <member name="M:YiSha.WebApi.Areas.SystemManage.CodeTempletController.GetPageListJson(YiSha.Model.Param.SystemManage.CodeTempletListParam,YiSha.Util.Model.Pagination)">
+            <summary>
+                条件查询-分页
+            </summary>
+        </member>
+        <member name="M:YiSha.WebApi.Areas.SystemManage.CodeTempletController.GetFormJson(System.Int64)">
+            <summary>
+                根据ID查询
+            </summary>
+        </member>
+        <member name="M:YiSha.WebApi.Areas.SystemManage.CodeTempletController.SaveFormJson(YiSha.Entity.CodeTempletEntity)">
+            <summary>
+                新增/修改 数据
+            </summary>
+        </member>
+        <member name="M:YiSha.WebApi.Areas.SystemManage.CodeTempletController.DeleteFormJson(System.String)">
+            <summary>
+                删除数据
+            </summary>
+        </member>
+        <member name="T:YiSha.WebApi.Areas.SystemManage.DataDictController">
+            <summary>
+                创 建：song
+                日 期：2020-12-18 16:04
+                描 述：数据字典控制器类
+            </summary>
+        </member>
+        <member name="M:YiSha.WebApi.Areas.SystemManage.DataDictController.GetListJson(YiSha.Model.Param.SystemManage.DataDictListParam)">
+            <summary>
+                条件查询
+            </summary>
+        </member>
+        <member name="M:YiSha.WebApi.Areas.SystemManage.DataDictController.GetPageListJson(YiSha.Model.Param.SystemManage.DataDictListParam,YiSha.Util.Model.Pagination)">
+            <summary>
+                条件查询-分页
+            </summary>
+        </member>
+        <member name="M:YiSha.WebApi.Areas.SystemManage.DataDictController.GetFormJson(System.Int64)">
+            <summary>
+                根据ID查询
+            </summary>
+        </member>
+        <member name="M:YiSha.WebApi.Areas.SystemManage.DataDictController.GetDataDictDetailListJson(YiSha.Model.Param.SystemManage.DataDictDetailListParam,YiSha.Util.Model.Pagination)">
+            <summary>
+                用于获取字典值
+            </summary>
+            <param name="param"></param>
+            <returns></returns>
+        </member>
+        <member name="M:YiSha.WebApi.Areas.SystemManage.DataDictController.SaveFormJson(YiSha.Entity.DataDictEntity)">
+            <summary>
+                新增/修改 数据
+            </summary>
+        </member>
+        <member name="M:YiSha.WebApi.Areas.SystemManage.DataDictController.DeleteFormJson(System.String)">
+            <summary>
+                删除数据
+            </summary>
+        </member>
+        <member name="T:YiSha.WebApi.Areas.SystemManage.LogApiController">
+            <summary>
+                创 建：
+                日 期：2020-12-04 12:49
+                描 述：Api日志控制器类
+            </summary>
+        </member>
+        <member name="M:YiSha.WebApi.Areas.SystemManage.LogApiController.GetListJson(YiSha.Model.Param.SystemManage.LogApiListParam)">
+            <summary>
+                条件查询
+            </summary>
+        </member>
+        <member name="M:YiSha.WebApi.Areas.SystemManage.LogApiController.GetPageListJson(YiSha.Model.Param.SystemManage.LogApiListParam,YiSha.Util.Model.Pagination)">
+            <summary>
+                条件查询-分页
+            </summary>
+        </member>
+        <member name="M:YiSha.WebApi.Areas.SystemManage.LogApiController.GetFormJson(System.Int64)">
+            <summary>
+                根据ID查询
+            </summary>
+        </member>
+        <member name="M:YiSha.WebApi.Areas.SystemManage.LogApiController.SaveFormJson(YiSha.Entity.LogApiEntity)">
+            <summary>
+                新增/修改 数据
+            </summary>
+        </member>
+        <member name="M:YiSha.WebApi.Areas.SystemManage.LogApiController.DeleteFormJson(System.String)">
+            <summary>
+                删除数据
+            </summary>
+        </member>
+        <member name="T:YiSha.WebApi.Areas.SystemManage.LogLoginController">
+            <summary>
+                创 建：song
+                日 期：2020-12-04 12:55
+                描 述：登陆日志控制器类
+            </summary>
+        </member>
+        <member name="M:YiSha.WebApi.Areas.SystemManage.LogLoginController.GetListJson(YiSha.Model.Param.SystemManage.LogLoginListParam)">
+            <summary>
+                条件查询
+            </summary>
+        </member>
+        <member name="M:YiSha.WebApi.Areas.SystemManage.LogLoginController.GetPageListJson(YiSha.Model.Param.SystemManage.LogLoginListParam,YiSha.Util.Model.Pagination)">
+            <summary>
+                条件查询-分页
+            </summary>
+        </member>
+        <member name="M:YiSha.WebApi.Areas.SystemManage.LogLoginController.GetFormJson(System.Int64)">
+            <summary>
+                根据ID查询
+            </summary>
+        </member>
+        <member name="M:YiSha.WebApi.Areas.SystemManage.LogLoginController.SaveFormJson(YiSha.Entity.LogLoginEntity)">
+            <summary>
+                新增/修改 数据
+            </summary>
+        </member>
+        <member name="M:YiSha.WebApi.Areas.SystemManage.LogLoginController.DeleteFormJson(System.String)">
+            <summary>
+                删除数据
+            </summary>
+        </member>
+        <member name="T:YiSha.WebApi.Areas.SystemManage.MqttThemeController">
+            <summary>
+                创 建：song
+                日 期：2020-12-23 08:24
+                描 述：MQTT主题订阅控制器类
+            </summary>
+        </member>
+        <member name="M:YiSha.WebApi.Areas.SystemManage.MqttThemeController.GetListJson(YiSha.Model.Param.SystemManage.MqttThemeListParam)">
+            <summary>
+                条件查询
+            </summary>
+        </member>
+        <member name="M:YiSha.WebApi.Areas.SystemManage.MqttThemeController.GetPageListJson(YiSha.Model.Param.SystemManage.MqttThemeListParam,YiSha.Util.Model.Pagination)">
+            <summary>
+                条件查询-分页
+            </summary>
+        </member>
+        <member name="M:YiSha.WebApi.Areas.SystemManage.MqttThemeController.GetMsgPageListJson(YiSha.Model.Param.SystemManage.MqttMsgListParam,YiSha.Util.Model.Pagination)">
+            <summary>
+                消息记录条件查询-分页
+            </summary>
+        </member>
+        <member name="M:YiSha.WebApi.Areas.SystemManage.MqttThemeController.GetFormJson(System.Int64)">
+            <summary>
+                根据ID查询
+            </summary>
+        </member>
+        <member name="M:YiSha.WebApi.Areas.SystemManage.MqttThemeController.SaveFormJson(YiSha.Entity.MqttThemeEntity)">
+            <summary>
+                新增/修改 数据
+            </summary>
+        </member>
+        <member name="M:YiSha.WebApi.Areas.SystemManage.MqttThemeController.DeleteFormJson(System.String)">
+            <summary>
+                删除数据
+            </summary>
+        </member>
+        <member name="T:YiSha.WebApi.Areas.SystemManage.RoleController">
+            <summary>
+                创 建：song
+                日 期：2020-12-06 09:46
+                描 述：角色信息控制器类
+            </summary>
+        </member>
+        <member name="M:YiSha.WebApi.Areas.SystemManage.RoleController.GetListJson(YiSha.Model.Param.SystemManage.RoleListParam)">
+            <summary>
+                条件查询
+            </summary>
+        </member>
+        <member name="M:YiSha.WebApi.Areas.SystemManage.RoleController.GetPageListJson(YiSha.Model.Param.SystemManage.RoleListParam,YiSha.Util.Model.Pagination)">
+            <summary>
+                条件查询-分页
+            </summary>
+        </member>
+        <member name="M:YiSha.WebApi.Areas.SystemManage.RoleController.GetFormJson(System.Int64)">
+            <summary>
+                根据ID查询
+            </summary>
+        </member>
+        <member name="M:YiSha.WebApi.Areas.SystemManage.RoleController.QueryRoleAuthTree(System.Int64)">
+            <summary>
+                查询权限菜单树
+            </summary>
+            <param name="id">角色ID</param>
+            <returns></returns>
+        </member>
+        <member name="M:YiSha.WebApi.Areas.SystemManage.RoleController.SaveFormJson(YiSha.Entity.RoleEntity)">
+            <summary>
+                新增/修改 数据
+            </summary>
+        </member>
+        <member name="M:YiSha.WebApi.Areas.SystemManage.RoleController.DeleteFormJson(System.String)">
+            <summary>
+                删除数据
+            </summary>
+        </member>
+        <member name="M:YiSha.WebApi.Areas.SystemManage.RoleController.SaveRoleAuth(System.Int64,System.String)">
+            <summary>
+                保存权限
+            </summary>
+            <param name="RoleId">角色ID</param>
+            <param name="MenuIds">菜单ID</param>
+            <returns></returns>
+        </member>
+        <member name="T:YiSha.WebApi.Areas.ToolManage.CodeGeneratorController">
+            <summary>
+                代码生成
+            </summary>
+        </member>
+        <member name="T:YiSha.WebApi.Areas.ToolManage.ServerController">
+            <summary>
+                服务器信息
+            </summary>
+        </member>
+        <member name="M:YiSha.WebApi.Areas.ToolManage.ServerController.GetServerJson">
+            <summary>
+                获取服务器状态
+            </summary>
+        </member>
+        <member name="M:YiSha.WebApi.Areas.ToolManage.ServerController.GetServerStatus">
+            <summary>
+                获取服务器状态
+            </summary>
+        </member>
+        <member name="M:YiSha.WebApi.Areas.ToolManage.ServerController.GetServerInfo">
+            <summary>
+                获取服务器基本参数
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:YiSha.WebApi.Handlers.AuthorizeFilterAttribute">
+            <summary>
+                验证token和记录日志
+            </summary>
+        </member>
+        <member name="F:YiSha.WebApi.Handlers.AuthorizeFilterAttribute.LogAllApi">
+            <summary>
+                Api记录操作
+            </summary>
+        </member>
+        <member name="M:YiSha.WebApi.Handlers.AuthorizeFilterAttribute.OnActionExecutionAsync(Microsoft.AspNetCore.Mvc.Filters.ActionExecutingContext,Microsoft.AspNetCore.Mvc.Filters.ActionExecutionDelegate)">
+            <summary>
+                异步接口日志
+            </summary>
+        </member>
+        <member name="M:YiSha.WebApi.Handlers.AuthorizeFilterAttribute.SetExceptionMsg(Microsoft.AspNetCore.Mvc.Filters.ActionExecutedContext,Microsoft.AspNetCore.Mvc.Filters.ActionExecutingContext,YiSha.Entity.LogApiEntity)">
+            <summary>
+                设置异常信息到日志文件和数据库
+            </summary>
+        </member>
+        <member name="M:YiSha.WebApi.Handlers.AuthorizeFilterAttribute.SaveLogAPI(YiSha.Entity.LogApiEntity)">
+            <summary>
+                保存日志到数据库
+            </summary>
+        </member>
+        <member name="M:YiSha.WebApi.Handlers.AuthorizeFilterAttribute.CheckAccess(Microsoft.AspNetCore.Mvc.Filters.ActionExecutingContext,YiSha.Util.Model.OperatorInfo)">
+            <summary>
+                校验是否有接口访问权限
+            </summary>
+        </member>
+        <member name="T:YiSha.WebApi.Handlers.ExResultProvider">
+            <summary>
+                异常返回值操作
+            </summary>
+        </member>
+        <member name="M:YiSha.WebApi.Handlers.ExResultProvider.OnException(Microsoft.AspNetCore.Mvc.Filters.ExceptionContext)">
+            <summary>
+                异常返回值
+            </summary>
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:YiSha.WebApi.Handlers.ExResultProvider.OnSucceeded(Microsoft.AspNetCore.Mvc.Filters.ActionExecutedContext)">
+            <summary>
+                成功返回值
+            </summary>
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:YiSha.WebApi.Handlers.ExResultProvider.OnValidateFailed(Microsoft.AspNetCore.Mvc.Filters.ActionExecutingContext,Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.IEnumerable{System.String}},System.String)">
+            <summary>
+                验证失败返回值
+            </summary>
+            <param name="context"></param>
+            <param name="modelStates"></param>
+            <param name="validationResults"></param>
+            <param name="validateFaildMessage"></param>
+            <returns></returns>
+        </member>
+        <member name="M:YiSha.WebApi.Handlers.ExResultProvider.OnResponseStatusCodes(Microsoft.AspNetCore.Http.HttpContext,System.Int32)">
+            <summary>
+                处理输出状态码
+            </summary>
+            <param name="context"></param>
+            <param name="statusCode"></param>
+            <returns></returns>
+        </member>
+        <member name="T:YiSha.WebApi.Handlers.JwtHandler">
+            <summary>
+                JWT 授权自定义处理程序
+            </summary>
+        </member>
+        <member name="M:YiSha.WebApi.Handlers.JwtHandler.PipelineAsync(Microsoft.AspNetCore.Authorization.AuthorizationHandlerContext,Microsoft.AspNetCore.Http.DefaultHttpContext)">
+            <summary>
+                请求管道
+            </summary>
+        </member>
+        <member name="M:YiSha.WebApi.Handlers.JwtHandler.CheckLogin(Microsoft.AspNetCore.Http.DefaultHttpContext)">
+            <summary>
+                登录校验
+            </summary>
+        </member>
+        <member name="T:YiSha.WebApi.Handlers.LogExceptionHandler">
+            <summary>
+                异常日志操作
+            </summary>
+        </member>
+        <member name="T:YiSha.WebApi.ServiceExtensions.AutoMapperSetup">
+            <summary>
+            Automapper 启动服务
+            </summary>
+        </member>
+        <member name="T:YiSha.Web.Areas.SystemManage.MenuController">
+            <summary>
+                创 建：song
+                日 期：2020-12-04 11:25
+                描 述：菜单控制器类
+            </summary>
+        </member>
+        <member name="M:YiSha.Web.Areas.SystemManage.MenuController.GetListJson(YiSha.Model.Param.SystemManage.MenuListParam)">
+            <summary>
+                条件查询
+            </summary>
+        </member>
+        <member name="M:YiSha.Web.Areas.SystemManage.MenuController.GetPageListJson(YiSha.Model.Param.SystemManage.MenuListParam,YiSha.Util.Model.Pagination)">
+            <summary>
+                条件查询-分页
+            </summary>
+        </member>
+        <member name="M:YiSha.Web.Areas.SystemManage.MenuController.GetFormJson(System.Int64)">
+            <summary>
+                根据ID查询
+            </summary>
+        </member>
+        <member name="M:YiSha.Web.Areas.SystemManage.MenuController.GetAccessByMenu(YiSha.Model.Param.SystemManage.ApiAuthorizeListParam)">
+            <summary>
+                根据权限标识查询菜单URL
+            </summary>
+        </member>
+        <member name="M:YiSha.Web.Areas.SystemManage.MenuController.SaveFormJson(YiSha.Entity.SystemManage.MenuEntity)">
+            <summary>
+                新增/修改 数据
+            </summary>
+        </member>
+        <member name="M:YiSha.Web.Areas.SystemManage.MenuController.DeleteFormJson(System.String)">
+            <summary>
+                删除数据
+            </summary>
+        </member>
+        <member name="M:YiSha.Web.Areas.SystemManage.MenuController.SaveAccess(YiSha.Model.Param.SystemManage.ApiAuthorizeSaveParam)">
+            <summary>
+                保存权限标识对应的url
+            </summary>
+        </member>
+    </members>
+</doc>

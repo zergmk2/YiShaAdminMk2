@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>MyProject.Entity.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="MyProject.Entity.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\YiSha.Data\YiSha.Data.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>MyProject.WebApi.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="MyProject.WebApi.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\YiSha.CodeGenerator\YiSha.CodeGenerator.csproj" />
+    <ProjectReference Include="..\YiSha.Business\YiSha.Business.csproj" />
+    <ProjectReference Include="..\YiSha.EntityListener\YiSha.EntityListener.csproj" />
+    <ProjectReference Include="..\YiSha.Enum\YiSha.Enum.csproj" />
+    <ProjectReference Include="..\YiSha.Mqtt\YiSha.Mqtt.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation" Version="5.0.3" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,791 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>YiSha.Entity</name>
+    </assembly>
+    <members>
+        <member name="T:YiSha.Entity.DepartmentEntity">
+            <summary>
+                创 建：song
+                日 期：2020-12-06 14:12
+                描 述：部门信息实体类
+            </summary>
+        </member>
+        <member name="P:YiSha.Entity.DepartmentEntity.Id">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:YiSha.Entity.DepartmentEntity.CreateTime">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:YiSha.Entity.DepartmentEntity.CreatorId">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:YiSha.Entity.DepartmentEntity.ParentId">
+            <summary>
+                父部门Id(0表示是根部门)
+            </summary>
+        </member>
+        <member name="P:YiSha.Entity.DepartmentEntity.DepartmentName">
+            <summary>
+                部门名称
+            </summary>
+        </member>
+        <member name="P:YiSha.Entity.DepartmentEntity.Telephone">
+            <summary>
+                部门电话
+            </summary>
+        </member>
+        <member name="P:YiSha.Entity.DepartmentEntity.Fax">
+            <summary>
+                部门传真
+            </summary>
+        </member>
+        <member name="P:YiSha.Entity.DepartmentEntity.Email">
+            <summary>
+                部门Email
+            </summary>
+        </member>
+        <member name="P:YiSha.Entity.DepartmentEntity.PrincipalId">
+            <summary>
+                部门负责人Id
+            </summary>
+        </member>
+        <member name="P:YiSha.Entity.DepartmentEntity.DepartmentSort">
+            <summary>
+                部门排序
+            </summary>
+        </member>
+        <member name="P:YiSha.Entity.DepartmentEntity.Remark">
+            <summary>
+                备注
+            </summary>
+        </member>
+        <member name="P:YiSha.Entity.DepartmentEntity.Enable">
+            <summary>
+                是否启用
+            </summary>
+        </member>
+        <member name="P:YiSha.Entity.DepartmentEntity.PrincipalPhone">
+            <summary>
+                负责人电话
+            </summary>
+        </member>
+        <member name="P:YiSha.Entity.DepartmentEntity.DepartmentCode">
+            <summary>
+                部门编号
+            </summary>
+        </member>
+        <member name="P:YiSha.Entity.DepartmentEntity.Ids">
+            <summary>
+                多个部门Id
+            </summary>
+        </member>
+        <member name="P:YiSha.Entity.DepartmentEntity.PrincipalName">
+            <summary>
+                负责人名称
+            </summary>
+        </member>
+        <member name="P:YiSha.Entity.DepartmentEntity.children">
+            <summary>
+                子集内容
+            </summary>
+        </member>
+        <member name="T:YiSha.Entity.PositionEntity">
+            <summary>
+                创 建：song
+                日 期：2020-12-06 14:10
+                描 述：职位信息实体类
+            </summary>
+        </member>
+        <member name="P:YiSha.Entity.PositionEntity.Id">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:YiSha.Entity.PositionEntity.CreateTime">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:YiSha.Entity.PositionEntity.CreatorId">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:YiSha.Entity.PositionEntity.PositionName">
+            <summary>
+                职位名称
+            </summary>
+        </member>
+        <member name="P:YiSha.Entity.PositionEntity.PositionSort">
+            <summary>
+                职位排序
+            </summary>
+        </member>
+        <member name="P:YiSha.Entity.PositionEntity.Remark">
+            <summary>
+                备注
+            </summary>
+        </member>
+        <member name="T:YiSha.Entity.UserBelongEntity">
+            <summary>
+                创 建：song
+                日 期：2020-12-04 13:08
+                描 述：用户关联信息实体类
+            </summary>
+        </member>
+        <member name="P:YiSha.Entity.UserBelongEntity.Id">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:YiSha.Entity.UserBelongEntity.CreateTime">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:YiSha.Entity.UserBelongEntity.CreatorId">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:YiSha.Entity.UserBelongEntity.UserId">
+            <summary>
+                用户Id
+            </summary>
+        </member>
+        <member name="P:YiSha.Entity.UserBelongEntity.BelongId">
+            <summary>
+                职位Id或者角色Id
+            </summary>
+        </member>
+        <member name="P:YiSha.Entity.UserBelongEntity.BelongType">
+            <summary>
+                所属类型(1职位 2角色)
+            </summary>
+        </member>
+        <member name="T:YiSha.Entity.UserEntity">
+            <summary>
+                创 建：song
+                日 期：2020-12-04 12:41
+                描 述：用户信息实体类
+            </summary>
+        </member>
+        <member name="P:YiSha.Entity.UserEntity.Id">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:YiSha.Entity.UserEntity.IsDelete">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:YiSha.Entity.UserEntity.CreateTime">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:YiSha.Entity.UserEntity.CreatorId">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:YiSha.Entity.UserEntity.UserName">
+            <summary>
+                用户名
+            </summary>
+        </member>
+        <member name="P:YiSha.Entity.UserEntity.Password">
+            <summary>
+                密码
+            </summary>
+        </member>
+        <member name="P:YiSha.Entity.UserEntity.Salt">
+            <summary>
+                密码盐值
+            </summary>
+        </member>
+        <member name="P:YiSha.Entity.UserEntity.RealName">
+            <summary>
+                姓名
+            </summary>
+        </member>
+        <member name="P:YiSha.Entity.UserEntity.DepartmentId">
+            <summary>
+                所属部门Id
+            </summary>
+        </member>
+        <member name="P:YiSha.Entity.UserEntity.Gender">
+            <summary>
+                性别(0未知 1男 2女)
+            </summary>
+        </member>
+        <member name="P:YiSha.Entity.UserEntity.Birthday">
+            <summary>
+                出生日期
+            </summary>
+        </member>
+        <member name="P:YiSha.Entity.UserEntity.Portrait">
+            <summary>
+                头像
+            </summary>
+        </member>
+        <member name="P:YiSha.Entity.UserEntity.Email">
+            <summary>
+                Email
+            </summary>
+        </member>
+        <member name="P:YiSha.Entity.UserEntity.Mobile">
+            <summary>
+                手机
+            </summary>
+        </member>
+        <member name="P:YiSha.Entity.UserEntity.QQ">
+            <summary>
+                QQ
+            </summary>
+        </member>
+        <member name="P:YiSha.Entity.UserEntity.WeChat">
+            <summary>
+                微信
+            </summary>
+        </member>
+        <member name="P:YiSha.Entity.UserEntity.LoginCount">
+            <summary>
+                登录次数
+            </summary>
+        </member>
+        <member name="P:YiSha.Entity.UserEntity.UserStatus">
+            <summary>
+                用户状态(0禁用 1启用)
+            </summary>
+        </member>
+        <member name="P:YiSha.Entity.UserEntity.IsSystem">
+            <summary>
+                系统用户(0不是 1是[系统用户拥有所有的权限])
+            </summary>
+        </member>
+        <member name="P:YiSha.Entity.UserEntity.IsOnline">
+            <summary>
+                在线(0不是 1是)
+            </summary>
+        </member>
+        <member name="P:YiSha.Entity.UserEntity.FirstVisit">
+            <summary>
+                首次登录时间
+            </summary>
+        </member>
+        <member name="P:YiSha.Entity.UserEntity.PreviousVisit">
+            <summary>
+                上一次登录时间
+            </summary>
+        </member>
+        <member name="P:YiSha.Entity.UserEntity.LastVisit">
+            <summary>
+                最后一次登录时间
+            </summary>
+        </member>
+        <member name="P:YiSha.Entity.UserEntity.Remark">
+            <summary>
+                备注
+            </summary>
+        </member>
+        <member name="P:YiSha.Entity.UserEntity.ApiToken">
+            <summary>
+                ApiToken
+            </summary>
+        </member>
+        <member name="P:YiSha.Entity.UserEntity.Picture">
+            <summary>
+                相片
+            </summary>
+        </member>
+        <member name="T:YiSha.Entity.ApiAuthorizeEntity">
+            <summary>
+                创 建：song
+                日 期：2020-12-04 16:22
+                描 述：接口权限实体类
+            </summary>
+        </member>
+        <member name="P:YiSha.Entity.ApiAuthorizeEntity.Id">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:YiSha.Entity.ApiAuthorizeEntity.Url">
+            <summary>
+                请求接口
+            </summary>
+        </member>
+        <member name="P:YiSha.Entity.ApiAuthorizeEntity.Authorize">
+            <summary>
+                菜单权限标识
+            </summary>
+        </member>
+        <member name="P:YiSha.Entity.SystemManage.AreaEntity.AreaCode">
+             <summary>
+            
+             </summary>
+             <returns></returns>
+        </member>
+        <member name="P:YiSha.Entity.SystemManage.AreaEntity.ParentAreaCode">
+             <summary>
+            
+             </summary>
+             <returns></returns>
+        </member>
+        <member name="P:YiSha.Entity.SystemManage.AreaEntity.AreaName">
+             <summary>
+            
+             </summary>
+             <returns></returns>
+        </member>
+        <member name="P:YiSha.Entity.SystemManage.AreaEntity.ZipCode">
+             <summary>
+            
+             </summary>
+             <returns></returns>
+        </member>
+        <member name="P:YiSha.Entity.SystemManage.AreaEntity.AreaLevel">
+             <summary>
+            
+             </summary>
+             <returns></returns>
+        </member>
+        <member name="T:YiSha.Entity.SystemManage.BaseAreaEntity">
+            <summary>
+            此类给其他需要省市县的业务表继承
+            </summary>
+        </member>
+        <member name="P:YiSha.Entity.SystemManage.BaseAreaEntity.ProvinceId">
+            <summary>
+            省份ID
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:YiSha.Entity.SystemManage.BaseAreaEntity.CityId">
+            <summary>
+            城市ID
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:YiSha.Entity.SystemManage.BaseAreaEntity.CountyId">
+            <summary>
+            区域ID
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:YiSha.Entity.SystemManage.AutoJobEntity.JobGroupName">
+             <summary>
+            
+             </summary>
+             <returns></returns>
+        </member>
+        <member name="P:YiSha.Entity.SystemManage.AutoJobEntity.JobName">
+             <summary>
+            
+             </summary>
+             <returns></returns>
+        </member>
+        <member name="P:YiSha.Entity.SystemManage.AutoJobEntity.JobStatus">
+             <summary>
+            
+             </summary>
+             <returns></returns>
+        </member>
+        <member name="P:YiSha.Entity.SystemManage.AutoJobEntity.CronExpression">
+             <summary>
+            
+             </summary>
+             <returns></returns>
+        </member>
+        <member name="P:YiSha.Entity.SystemManage.AutoJobEntity.StartTime">
+             <summary>
+            
+             </summary>
+             <returns></returns>
+        </member>
+        <member name="P:YiSha.Entity.SystemManage.AutoJobEntity.EndTime">
+             <summary>
+            
+             </summary>
+             <returns></returns>
+        </member>
+        <member name="P:YiSha.Entity.SystemManage.AutoJobEntity.NextStartTime">
+             <summary>
+            
+             </summary>
+             <returns></returns>
+        </member>
+        <member name="P:YiSha.Entity.SystemManage.AutoJobEntity.Remark">
+            <summary>
+            备注
+            </summary>
+        </member>
+        <member name="P:YiSha.Entity.SystemManage.AutoJobLogEntity.JobGroupName">
+             <summary>
+            
+             </summary>
+             <returns></returns>
+        </member>
+        <member name="P:YiSha.Entity.SystemManage.AutoJobLogEntity.JobName">
+             <summary>
+            
+             </summary>
+             <returns></returns>
+        </member>
+        <member name="P:YiSha.Entity.SystemManage.AutoJobLogEntity.LogStatus">
+             <summary>
+            
+             </summary>
+             <returns></returns>
+        </member>
+        <member name="P:YiSha.Entity.SystemManage.AutoJobLogEntity.Remark">
+             <summary>
+            
+             </summary>
+             <returns></returns>
+        </member>
+        <member name="T:YiSha.Entity.CodeTempletEntity">
+            <summary>
+                创 建：song
+                日 期：2020-12-04 12:28
+                描 述：代码模板实体类
+            </summary>
+        </member>
+        <member name="P:YiSha.Entity.CodeTempletEntity.Id">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:YiSha.Entity.CodeTempletEntity.Code">
+            <summary>
+                代码
+            </summary>
+        </member>
+        <member name="P:YiSha.Entity.CodeTempletEntity.Remark">
+            <summary>
+                备注
+            </summary>
+        </member>
+        <member name="P:YiSha.Entity.CodeTempletEntity.Flag">
+            <summary>
+                标识
+            </summary>
+        </member>
+        <member name="P:YiSha.Entity.CodeTempletEntity.Type">
+            <summary>
+                语言类型
+            </summary>
+        </member>
+        <member name="T:YiSha.Entity.DataDictDetailEntity">
+            <summary>
+                创 建：song
+                日 期：2020-12-19 08:59
+                描 述：数据字典值实体类
+            </summary>
+        </member>
+        <member name="P:YiSha.Entity.DataDictDetailEntity.Id">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:YiSha.Entity.DataDictDetailEntity.CreateTime">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:YiSha.Entity.DataDictDetailEntity.DictType">
+            <summary>
+                字典类型(外键)
+            </summary>
+        </member>
+        <member name="P:YiSha.Entity.DataDictDetailEntity.DictSort">
+            <summary>
+                字典排序
+            </summary>
+        </member>
+        <member name="P:YiSha.Entity.DataDictDetailEntity.DictKey">
+            <summary>
+                字典键(一般从1开始)
+            </summary>
+        </member>
+        <member name="P:YiSha.Entity.DataDictDetailEntity.DictValue">
+            <summary>
+                字典值
+            </summary>
+        </member>
+        <member name="P:YiSha.Entity.DataDictDetailEntity.ListClass">
+            <summary>
+                显示样式(default primary success info warning danger)
+            </summary>
+        </member>
+        <member name="P:YiSha.Entity.DataDictDetailEntity.DictStatus">
+            <summary>
+                字典状态(0禁用 1启用)
+            </summary>
+        </member>
+        <member name="P:YiSha.Entity.DataDictDetailEntity.IsDefault">
+            <summary>
+                默认选中(0不是 1是)
+            </summary>
+        </member>
+        <member name="P:YiSha.Entity.DataDictDetailEntity.Remark">
+            <summary>
+                备注
+            </summary>
+        </member>
+        <member name="T:YiSha.Entity.DataDictEntity">
+            <summary>
+                创 建：song
+                日 期：2020-12-18 16:04
+                描 述：数据字典实体类
+            </summary>
+        </member>
+        <member name="P:YiSha.Entity.DataDictEntity.Id">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:YiSha.Entity.DataDictEntity.CreateTime">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:YiSha.Entity.DataDictEntity.CreatorId">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:YiSha.Entity.DataDictEntity.DictType">
+            <summary>
+                字典类型
+            </summary>
+        </member>
+        <member name="P:YiSha.Entity.DataDictEntity.DictSort">
+            <summary>
+                字典排序
+            </summary>
+        </member>
+        <member name="P:YiSha.Entity.DataDictEntity.Remark">
+            <summary>
+                备注
+            </summary>
+        </member>
+        <member name="T:YiSha.Entity.LogApiEntity">
+            <summary>
+                创 建：
+                日 期：2020-12-04 12:49
+                描 述：Api日志实体类
+            </summary>
+        </member>
+        <member name="P:YiSha.Entity.LogApiEntity.Id">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:YiSha.Entity.LogApiEntity.CreateTime">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:YiSha.Entity.LogApiEntity.CreatorId">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:YiSha.Entity.LogApiEntity.LogStatus">
+            <summary>
+                执行状态(0失败 1成功)
+            </summary>
+        </member>
+        <member name="P:YiSha.Entity.LogApiEntity.Remark">
+            <summary>
+                备注
+            </summary>
+        </member>
+        <member name="P:YiSha.Entity.LogApiEntity.ExecuteUrl">
+            <summary>
+                接口地址
+            </summary>
+        </member>
+        <member name="P:YiSha.Entity.LogApiEntity.ExecuteParam">
+            <summary>
+                请求参数
+            </summary>
+        </member>
+        <member name="P:YiSha.Entity.LogApiEntity.ExecuteResult">
+            <summary>
+                请求结果
+            </summary>
+        </member>
+        <member name="P:YiSha.Entity.LogApiEntity.ExecuteTime">
+            <summary>
+                执行时间
+            </summary>
+        </member>
+        <member name="P:YiSha.Entity.LogApiEntity.IpAddress">
+            <summary>
+                IP地址
+            </summary>
+        </member>
+        <member name="T:YiSha.Entity.LogLoginEntity">
+            <summary>
+                创 建：song
+                日 期：2020-12-04 12:55
+                描 述：登陆日志实体类
+            </summary>
+        </member>
+        <member name="P:YiSha.Entity.LogLoginEntity.Id">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:YiSha.Entity.LogLoginEntity.CreateTime">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:YiSha.Entity.LogLoginEntity.CreatorId">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:YiSha.Entity.LogLoginEntity.LogStatus">
+            <summary>
+                执行状态(0失败 1成功)
+            </summary>
+        </member>
+        <member name="P:YiSha.Entity.LogLoginEntity.IpAddress">
+            <summary>
+                ip地址
+            </summary>
+        </member>
+        <member name="P:YiSha.Entity.LogLoginEntity.IpLocation">
+            <summary>
+                ip位置
+            </summary>
+        </member>
+        <member name="P:YiSha.Entity.LogLoginEntity.Browser">
+            <summary>
+                浏览器
+            </summary>
+        </member>
+        <member name="P:YiSha.Entity.LogLoginEntity.OS">
+            <summary>
+                操作系统
+            </summary>
+        </member>
+        <member name="P:YiSha.Entity.LogLoginEntity.Remark">
+            <summary>
+                备注
+            </summary>
+        </member>
+        <member name="P:YiSha.Entity.LogLoginEntity.ExtraRemark">
+            <summary>
+                额外备注
+            </summary>
+        </member>
+        <member name="T:YiSha.Entity.MenuAuthorizeEntity">
+            <summary>
+                创 建：song
+                日 期：2020-12-04 11:16
+                描 述：菜单权限实体类
+            </summary>
+        </member>
+        <member name="P:YiSha.Entity.MenuAuthorizeEntity.Id">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:YiSha.Entity.MenuAuthorizeEntity.CreateTime">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:YiSha.Entity.MenuAuthorizeEntity.CreatorId">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:YiSha.Entity.MenuAuthorizeEntity.MenuId">
+            <summary>
+                菜单Id
+            </summary>
+        </member>
+        <member name="P:YiSha.Entity.MenuAuthorizeEntity.AuthorizeId">
+            <summary>
+                授权Id(角色Id或者用户Id)
+            </summary>
+        </member>
+        <member name="P:YiSha.Entity.MenuAuthorizeEntity.AuthorizeType">
+            <summary>
+                授权类型(1角色 2用户)
+            </summary>
+        </member>
+        <member name="T:YiSha.Entity.MqttMsgEntity">
+            <summary>
+                创 建：song
+                日 期：2020-12-23 08:40
+                描 述：MQTT消息记录实体类
+            </summary>
+        </member>
+        <member name="P:YiSha.Entity.MqttMsgEntity.Id">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:YiSha.Entity.MqttMsgEntity.ThemeName">
+            <summary>
+                主题名称
+            </summary>
+        </member>
+        <member name="P:YiSha.Entity.MqttMsgEntity.Msg">
+            <summary>
+                消息
+            </summary>
+        </member>
+        <member name="T:YiSha.Entity.MqttThemeEntity">
+            <summary>
+                创 建：song
+                日 期：2020-12-23 08:24
+                描 述：MQTT主题订阅实体类
+            </summary>
+        </member>
+        <member name="P:YiSha.Entity.MqttThemeEntity.Id">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:YiSha.Entity.MqttThemeEntity.ThemeName">
+            <summary>
+                订阅主题名称
+            </summary>
+        </member>
+        <member name="P:YiSha.Entity.MqttThemeEntity.IsSubscribe">
+            <summary>
+                是否订阅
+            </summary>
+        </member>
+        <member name="T:YiSha.Entity.RoleEntity">
+            <summary>
+                创 建：song
+                日 期：2020-12-06 09:46
+                描 述：角色信息实体类
+            </summary>
+        </member>
+        <member name="P:YiSha.Entity.RoleEntity.Id">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:YiSha.Entity.RoleEntity.CreateTime">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:YiSha.Entity.RoleEntity.CreatorId">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:YiSha.Entity.RoleEntity.RoleName">
+            <summary>
+                角色名称
+            </summary>
+        </member>
+        <member name="P:YiSha.Entity.RoleEntity.RoleSort">
+            <summary>
+                角色排序
+            </summary>
+        </member>
+        <member name="P:YiSha.Entity.RoleEntity.RoleStatus">
+            <summary>
+                角色状态(0禁用 1启用)
+            </summary>
+        </member>
+        <member name="P:YiSha.Entity.RoleEntity.Remark">
+            <summary>
+                备注
+            </summary>
+        </member>
+        <member name="P:YiSha.Entity.RoleEntity.MenuIds">
+            <summary>
+            角色对应的菜单，页面和按钮
+            </summary>
+        </member>
+    </members>
+</doc>

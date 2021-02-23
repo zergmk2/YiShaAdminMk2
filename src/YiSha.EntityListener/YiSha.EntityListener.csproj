@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="OrganizationManage\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\YiSha.Cache\YiSha.Cache.csproj" />
+    <ProjectReference Include="..\YiSha.Entity\YiSha.Entity.csproj" />
+  </ItemGroup>
+
+</Project>
