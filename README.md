@@ -13,3 +13,5 @@ YiShaAdminMKII 基于一沙后台和queer，在此表示感谢 :）
     * 访问 http://localhost:18086/  账号 admin 密码 123456
     * 项目 Swagger地址 http://localhost:18086//api
 5. 项目截图
+![](screenshot/Index.png)
+![](screenshot/UserManagerPage.png)
