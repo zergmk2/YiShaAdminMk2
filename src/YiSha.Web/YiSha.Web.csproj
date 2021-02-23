@@ -15,8 +15,6 @@
   </ItemGroup>
 
   <ItemGroup>
-<!--    <ProjectReference Include="..\YiSha.Database.Migrations\YiSha.Database.Migrations.csproj" />-->
-    <ProjectReference Include="..\YiSha.Database.Migrations\YiSha.Database.Migrations.csproj" />
     <ProjectReference Include="..\YiSha.WebApi\YiSha.WebApi.csproj" />
   </ItemGroup>
 

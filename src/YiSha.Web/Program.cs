@@ -21,7 +21,6 @@ namespace YiSha.Web
                 {
                     webBuilder.Inject()
                         .UseEnvironment(enviroment)
-                        .UseUrls("http://*:18086")
                         .UseStartup<Startup>();
                 });
         }

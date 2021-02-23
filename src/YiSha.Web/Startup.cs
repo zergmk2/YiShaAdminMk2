@@ -26,38 +26,15 @@ namespace YiSha.Web
                 app.UseDeveloperExceptionPage();
             }
 
-            var defaultFilesOptions = new DefaultFilesOptions();
-            defaultFilesOptions.DefaultFileNames.Clear();
-            defaultFilesOptions.DefaultFileNames.Add("login.html");
-            app.UseDefaultFiles(defaultFilesOptions);
             app.UseSession();
-            app.UseStaticFiles(new StaticFileOptions
-            {
-                OnPrepareResponse = context =>
-                {
-                    context.Context.Response.Headers.Add("Server-Ext", "FX-EWB-Compatible");
-                    context.Context.Response.Headers.Add("X-FX-EWB-Version", "4.0");
-                },
-            });
-
-            // var resource = Path.Combine(env.ContentRootPath, "Resource");
-            // FileHelper.CreateDirectory(resource);
-            // app.UseStaticFiles(new StaticFileOptions
-            // {
-            //     OnPrepareResponse = context =>
-            //     {
-            //         context.Context.Response.Headers.Add("Server-Ext", "FX-EWB-Compatible");
-            //         context.Context.Response.Headers.Add("X-FX-EWB-Version", "4.0");
-            //     },
-            //     RequestPath = "/Resource",
-            //     FileProvider = new PhysicalFileProvider(resource)
-            // });
+            app.UseStaticFiles();
 
             app.UseRouting();
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllerRoute("areas", "{area:exists}/{controller=Home}/{action=Index}/{id?}");
                 endpoints.MapControllerRoute("default", "{controller=Home}/{action=Index}/{id?}");
+                endpoints.MapDefaultControllerRoute();
             });
 
             GlobalContext.ServiceProvider = app.ApplicationServices;

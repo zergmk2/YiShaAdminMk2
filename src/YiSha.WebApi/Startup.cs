@@ -44,14 +44,8 @@ namespace YiSha.WebApi
             
             // 注册拦截器
             services.AddScoped<AuthorizeFilterAttribute>();
-            // // if (env.IsDevelopment())
-            // // {
-            // //     services.AddControllersWithViews().AddRazorRuntimeCompilation();
-            // // }
-            // // else
-            // // {
+            services.AddControllersWithViews().AddRazorRuntimeCompilation();
             services.AddControllersWithViews();
-            // }
             services.AddAutoMapperSetup();
         }
 

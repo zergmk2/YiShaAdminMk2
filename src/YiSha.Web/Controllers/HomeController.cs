@@ -44,6 +44,11 @@ namespace YiSha.Web.Controllers
         public async Task<IActionResult> Index()
         {
             OperatorInfo operatorInfo = await _operator.Current();
+            if (operatorInfo == null)
+            {
+                LogHelper.Debug("User Not Login. Redirect to Login page.");
+                return RedirectToAction("Login");
+            }
             TData<List<MenuEntity>> objMenu = await menuBLL.GetList(null);
             List<MenuEntity> menuList = objMenu.Data;
             menuList = menuList.Where(p => p.MenuStatus == StatusEnum.Yes.ParseToInt()).ToList();
